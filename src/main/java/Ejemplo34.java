@@ -2,27 +2,22 @@ import java.util.Scanner;
 
 public class Ejemplo34 {
     public static void main(String[] args)
-    {	
-    	Scanner miScanner = new Scanner(System.in);
-		int x;
-		int y;
-		
-		System.out.println("Introduce un número");
-		x = miScanner.nextInt();
-		
-		System.out.println("Introduce otro número");
-		y = miScanner.nextInt();
-		
-		miScanner.close();
+    {
+        int multiplicando;
+        int multiplicador;
+        int resultado = 0;
 
-		//La variable mul es un acumulador, inicializado en este caso al primer número
-		int mul = x;
-		
-		for (int i = 1; i < y; i++) {
-			//Vamos sumando tantas veces como indique `y` (es decir, multiplicando)
-			mul += x;
-		}
-		System.out.printf("%d x %d = %d", x, y, mul);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escriba dos números");
+        multiplicando = sc.nextInt();
+        multiplicador = sc.nextInt();
+
+        //Vamos sumando n veces el multiplicador, y lo acumulamos en resultado, que se inicializa a 0
+        // en la multiplicación de 10 * 5, 10 es el multiplicando y 5 es el multiplicador
+        for (int i = 1; i <= multiplicador; i++){
+            resultado += multiplicando;
+        }
+        System.out.println(resultado);
 	}
 
 }
