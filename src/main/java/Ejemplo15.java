@@ -16,7 +16,7 @@ public class Ejemplo15 {
 		switch (numero) {
 		case 1:
 			System.out.println("Uno");
-			//Importane usar break para que no continúe ejecuntando la siguiente instrucción System.out.println("Dos");
+			//Importante usar break para que no continúe ejecutando la siguiente instrucción System.out.println("Dos");
 			break;
 		case 2:
 			System.out.println("Dos");
