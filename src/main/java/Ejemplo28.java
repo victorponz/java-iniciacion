@@ -13,12 +13,15 @@ public class Ejemplo28 {
 		if ((numero == 1) || ((numero != 2 ) && (numero % 2 == 0))) {
 			esPrimo = false;
 		}else{
-			//Sólo lo dividimos por los impares, hasta la mitad del número
+			//Solo lo dividimos por los impares, hasta la mitad del número
+            //pero no pasa nada si no lo divides
 		    for(int i=3; i <= (numero / 2); i+=2) {
-				//Si el resto de la división es 0 es divisible u por tanto NO es primo
-		        if(numero %i ==0){ 
+				//Si el resto de la división es 0, es divisible y por tanto NO es primo
+		        if(numero %i == 0){
 		        	esPrimo = false;
-					//Una vez sabemos que no es primo ya podemos salir del bucle
+					// Una vez sabemos que no es primo ya podemos salir del bucle.
+                    // Fíjate que, cuando hay una bandera en un bucle, NO
+                    // tiene 'else'
 		        	break;
 		        }
 		    }
