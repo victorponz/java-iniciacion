@@ -36,7 +36,19 @@ public class Ejemplo18 {
 				}
 			}
 		}
-		
+
+        //Otra forma de hacerlo es la siguiente
+//        if ((minutos == 59) && (segundos == 59)){
+//            horas++;
+//            System.out.printf("%d:%d:%d", horas, 0, 0);
+//        } else if (segundos == 59) {
+//            minutos++;
+//            System.out.printf("%d:%d:%d", horas, minutos, 0);
+//        }else{
+//            segundos++;
+//            System.out.printf("%d:%d:%d", horas, minutos, segundos);
+//        }
+//
 		System.out.printf("Ahora son %d:%d:%d %n", horas, minutos, segundos);
 	}
 }
