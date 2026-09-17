@@ -1,3 +1,5 @@
+package decision;
+
 import java.util.Scanner;
 
 public class CalificadorExamen {
