@@ -13,11 +13,21 @@ public class DescuentosTienda {
         double descuento = 0;
 
         if (esSocio.equalsIgnoreCase("si")) {
+            // Fijaos que primero empezamos por el de más valor porque estamos usando > (mayor)
             if (importe > 100) {
                 descuento = 0.15;
             } else if (importe > 50) {
                 descuento = 0.10;
             }
+            /* Esta sería la versión de menor a mayor
+            if (importe <= 50) {
+                descuento = 0;
+            }else if (importe <= 100) {
+                descuento = 0.1;
+            }else{
+                descuento = 0.15;
+            }
+            */
         } else {
             if (importe > 50) {
                 descuento = 0.05;
